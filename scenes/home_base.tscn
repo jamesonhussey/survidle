@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://78er60ke7kgd"]
+
+[ext_resource type="Texture2D" uid="uid://7xmdnc0wkfs1" path="res://assets/home_base/home_base_1.png" id="1_qt578"]
+[ext_resource type="Script" path="res://scripts/home_base.gd" id="1_xrxf4"]
+[ext_resource type="PackedScene" uid="uid://b1v2iqvfo838j" path="res://scenes/fishing_cat_character.tscn" id="3_v5lrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqfmk"]
+atlas = ExtResource("1_qt578")
+region = Rect2(0, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvnsj"]
+atlas = ExtResource("1_qt578")
+region = Rect2(1280, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7x0k"]
+atlas = ExtResource("1_qt578")
+region = Rect2(2560, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8fis"]
+atlas = ExtResource("1_qt578")
+region = Rect2(3840, 0, 1280, 720)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfgxn"]
+atlas = ExtResource("1_qt578")
+region = Rect2(5120, 0, 1280, 720)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cfk4q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqfmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvnsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7x0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8fis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gfgxn")
+}],
+"loop": true,
+"name": &"fire_burning",
+"speed": 5.0
+}]
+
+[node name="home_base" type="Node2D"]
+script = ExtResource("1_xrxf4")
+
+[node name="map" type="AnimatedSprite2D" parent="."]
+position = Vector2(640, 360)
+sprite_frames = SubResource("SpriteFrames_cfk4q")
+animation = &"fire_burning"
+
+[node name="fishing_cat_character" parent="." instance=ExtResource("3_v5lrj")]
+position = Vector2(563, 325)
+scale = Vector2(5, 5)

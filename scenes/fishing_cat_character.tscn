@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://b1v2iqvfo838j"]
+
+[ext_resource type="Script" path="res://scripts/cat_character.gd" id="1_2jnx2"]
+[ext_resource type="Texture2D" uid="uid://cqiufgxujjxir" path="res://assets/cat_character/1_Cat_Idle-Sheet.png" id="2_lvuds"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pe3yr"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tap64"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gf20x"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4x573"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poee5"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyqof"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfai3"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb1qs"]
+atlas = ExtResource("2_lvuds")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a5r8y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pe3yr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tap64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gf20x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4x573")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poee5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hyqof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfai3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb1qs")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="fishing_cat_character" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_2jnx2")
+
+[node name="cat_animations" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_a5r8y")
+animation = &"idle"
+
+[node name="ticker" type="Timer" parent="."]
+
+[connection signal="timeout" from="ticker" to="." method="_on_ticker_timeout"]
