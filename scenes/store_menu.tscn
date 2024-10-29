@@ -1,0 +1,311 @@
+[gd_scene load_steps=2 format=3 uid="uid://63tjh1b4plnk"]
+
+[ext_resource type="Texture2D" uid="uid://go15lq1j85l8" path="res://assets/ui_elements/store_fish.png" id="1_ufnvk"]
+
+[node name="store_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -934.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="fisherman_container" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="fisherman_label" type="Label" parent="ScrollContainer/VBoxContainer/fisherman_container"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Fisherman"
+vertical_alignment = 1
+
+[node name="recruit_fisherman_price" type="Button" parent="ScrollContainer/VBoxContainer/fisherman_container"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container2" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container2"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container2"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container3" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container3"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container3"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container4" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container4"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container4"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container5" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container5"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container5"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container6" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container6"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container6"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container7" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container7"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container7"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container8" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container8"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container8"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container9" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container9"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container9"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container10" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container10"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container10"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container11" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container11"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container11"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container12" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container12"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container12"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container13" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container13"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container13"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container14" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container14"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container14"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")
+
+[node name="example_container15" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container15"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 1
+text = "Recruit Example"
+vertical_alignment = 1
+
+[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container15"]
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_filter = 1
+text = "Example Price"
+icon = ExtResource("1_ufnvk")

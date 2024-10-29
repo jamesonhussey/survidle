@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dc134bgjmimx0" path="res://assets/ui_elements/base_ui.png" id="1_8k5qu"]
 [ext_resource type="Script" path="res://scripts/ui_overlay.gd" id="1_ovja4"]
-[ext_resource type="Texture2D" uid="uid://go15lq1j85l8" path="res://assets/ui_elements/store_fish.png" id="3_g4kq4"]
 [ext_resource type="PackedScene" uid="uid://bdiqm8gly43t5" path="res://scenes/fishing_minigame.tscn" id="3_wv3eu"]
 [ext_resource type="PackedScene" uid="uid://78er60ke7kgd" path="res://scenes/home_base.tscn" id="4_n1xfb"]
+[ext_resource type="PackedScene" uid="uid://63tjh1b4plnk" path="res://scenes/store_menu.tscn" id="5_icldk"]
 
 [node name="ui_overlay" type="Control"]
 texture_filter = 1
@@ -38,34 +38,6 @@ theme_override_font_sizes/font_size = 42
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="store_menu_scroll_container" type="ScrollContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.694
-anchor_top = 0.178
-anchor_right = 0.978
-anchor_bottom = 0.961
-offset_left = -0.320007
-offset_top = -0.160004
-offset_right = 0.159912
-offset_bottom = 0.0799561
-
-[node name="VBoxContainer" type="VBoxContainer" parent="store_menu_scroll_container"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="store_menu_scroll_container/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 0
-
-[node name="Sprite2D" type="Sprite2D" parent="store_menu_scroll_container/VBoxContainer/HBoxContainer"]
-texture = ExtResource("3_g4kq4")
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="store_menu_scroll_container/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 0
-
 [node name="go_right_button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -94,6 +66,13 @@ z_index = -1
 [node name="fishing_minigame" parent="." instance=ExtResource("3_wv3eu")]
 visible = false
 z_index = -1
+
+[node name="store_menu" parent="." instance=ExtResource("5_icldk")]
+layout_mode = 1
+offset_left = 888.0
+offset_top = 128.0
+offset_right = -28.0
+offset_bottom = -28.0
 
 [connection signal="button_down" from="go_right_button" to="." method="_on_go_right_button_button_down"]
 [connection signal="button_down" from="go_left_button" to="." method="_on_go_left_button_button_down"]
