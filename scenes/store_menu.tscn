@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://63tjh1b4plnk"]
+[gd_scene load_steps=3 format=3 uid="uid://63tjh1b4plnk"]
 
+[ext_resource type="Script" path="res://scripts/store_menu.gd" id="1_d236q"]
 [ext_resource type="Texture2D" uid="uid://go15lq1j85l8" path="res://assets/ui_elements/store_fish.png" id="1_ufnvk"]
 
 [node name="store_menu" type="Control"]
@@ -10,6 +11,7 @@ anchor_bottom = 1.0
 offset_right = -934.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_d236q")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
@@ -33,7 +35,7 @@ size_flags_vertical = 1
 text = "Recruit Fisherman"
 vertical_alignment = 1
 
-[node name="recruit_fisherman_price" type="Button" parent="ScrollContainer/VBoxContainer/fisherman_container"]
+[node name="recruit_fisherman_button" type="Button" parent="ScrollContainer/VBoxContainer/fisherman_container"]
 layout_mode = 2
 size_flags_horizontal = 8
 mouse_filter = 1
@@ -309,3 +311,5 @@ size_flags_horizontal = 8
 mouse_filter = 1
 text = "Example Price"
 icon = ExtResource("1_ufnvk")
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/fisherman_container/recruit_fisherman_button" to="." method="_on_recruit_fisherman_button_pressed"]

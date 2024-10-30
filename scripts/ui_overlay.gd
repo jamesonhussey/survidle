@@ -1,7 +1,5 @@
 extends Control
 
-# TODO: Look up how to make a scrolling menu and just get that out of the way now so it doesn't have to be fucked with later
-
 var game_screen_list = ["home_base", "fishing_minigame"]
 var game_screen_list_iterator = 0
 var transitioned = true
