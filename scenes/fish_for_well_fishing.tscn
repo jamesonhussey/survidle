@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://d1jehuoijj70l"]
+
+[ext_resource type="Script" path="res://scripts/fish_for_well_fishing.gd" id="1_nv65k"]
+[ext_resource type="Texture2D" uid="uid://v4k6vgk00w2m" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_1_common.png" id="2_etkcn"]
+[ext_resource type="Texture2D" uid="uid://bn76fxnrt78ev" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_2_uncommon.png" id="3_vdhle"]
+[ext_resource type="Texture2D" uid="uid://d0nrbf4nhoxq2" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_3_rare.png" id="4_flfb0"]
+[ext_resource type="Texture2D" uid="uid://dt2myfooafa3w" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_4_epic.png" id="5_ueuw2"]
+[ext_resource type="Texture2D" uid="uid://e3ychf6eigd4" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_5_legendary.png" id="6_gp3cf"]
+[ext_resource type="Texture2D" uid="uid://c8xhfslrwkect" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_6_godly.png" id="7_pyfoe"]
+[ext_resource type="Texture2D" uid="uid://bn2h1admnbdu2" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_7_impossible.png" id="8_u7ww2"]
+
+[node name="fish_for_well_fishing" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_nv65k")
+
+[node name="common_fish" type="Sprite2D" parent="."]
+texture = ExtResource("2_etkcn")
+
+[node name="uncommon_fish" type="Sprite2D" parent="."]
+texture = ExtResource("3_vdhle")
+
+[node name="rare_fish" type="Sprite2D" parent="."]
+texture = ExtResource("4_flfb0")
+
+[node name="epic_fish" type="Sprite2D" parent="."]
+texture = ExtResource("5_ueuw2")
+
+[node name="legendary_fish" type="Sprite2D" parent="."]
+texture = ExtResource("6_gp3cf")
+
+[node name="godly_fish" type="Sprite2D" parent="."]
+texture = ExtResource("7_pyfoe")
+
+[node name="impossible_fish" type="Sprite2D" parent="."]
+texture = ExtResource("8_u7ww2")
