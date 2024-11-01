@@ -5,9 +5,16 @@ extends CharacterBody2D
 const lateral_speed = 300
 const downward_speed = 200
 
+var fish_caught_on_hook = []
+
 func _physics_process(delta: float) -> void:
 	player_movement(delta)
 	vertical_movement(delta)
+
+func _process(delta: float) -> void:
+	if Global.caught_fish_array.size() >= 1:
+		fish_caught_on_hook.push_back(Global.caught_fish_array.pop_at(0))
+
 
 func player_movement(delta):
 	if Input.is_action_pressed("ui_right"):
@@ -23,3 +30,6 @@ func vertical_movement(delta):
 		velocity.y = downward_speed
 	else:
 		velocity.y = -downward_speed
+
+func fish_hook():
+	pass

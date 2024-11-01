@@ -6,16 +6,12 @@ extends Node2D
 var fish_for_well_fishing_scene = preload("res://scenes/fish_for_well_fishing.tscn")
 @onready var spawn_container_container = $spawn_container_container
 
-var down_speed
-var lateral_speed = 100
-
 func _ready() -> void:
 	randomize()
 	generate_fish_layout()
 
 func generate_fish_layout():
 	for spawn_container in spawn_container_container.get_children():
-		var picked_fish = []
 		for marker in spawn_container.get_children():
 			var fish_rarity_level = pick_fish_rarity()
 			Global.spawned_fish_rarity = fish_rarity_level

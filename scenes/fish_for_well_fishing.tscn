@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d1jehuoijj70l"]
+[gd_scene load_steps=11 format=3 uid="uid://d1jehuoijj70l"]
 
 [ext_resource type="Script" path="res://scripts/fish_for_well_fishing.gd" id="1_nv65k"]
 [ext_resource type="Texture2D" uid="uid://v4k6vgk00w2m" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_1_common.png" id="2_etkcn"]
@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://e3ychf6eigd4" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_5_legendary.png" id="6_gp3cf"]
 [ext_resource type="Texture2D" uid="uid://c8xhfslrwkect" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_6_godly.png" id="7_pyfoe"]
 [ext_resource type="Texture2D" uid="uid://bn2h1admnbdu2" path="res://assets/fishing_minigame/well_fishing_minigame/fish_rarity_7_impossible.png" id="8_u7ww2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wv4or"]
+size = Vector2(32, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ni0x4"]
+size = Vector2(32, 6)
 
 [node name="fish_for_well_fishing" type="Node2D"]
 texture_filter = 1
@@ -33,3 +39,18 @@ texture = ExtResource("7_pyfoe")
 
 [node name="impossible_fish" type="Sprite2D" parent="."]
 texture = ExtResource("8_u7ww2")
+
+[node name="hitbox_top" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox_top"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_wv4or")
+
+[node name="hitbox_bottom" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox_bottom"]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_ni0x4")
+
+[connection signal="body_entered" from="hitbox_top" to="." method="_on_hitbox_top_body_entered"]
+[connection signal="body_entered" from="hitbox_bottom" to="." method="_on_hitbox_bottom_body_entered"]
