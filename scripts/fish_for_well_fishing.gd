@@ -1,5 +1,7 @@
 extends Node2D
 
+# TODO: Make one random one remove when they're spawned in so it leaves a space to move through. WCS, can just have a 1/10 chance to queue_free. Likely have a global array that tells whether each set has one missing or not. EX: [1, 1, 1, 1, 1, 1, 1, 1, 1] would mean all the spaces are full, in which case, queue_free() the last one and pop_back() all the values to clear the way for the next spawn set. 
+
 var fish_rarity = null
 
 # Called when the node enters the scene tree for the first time.

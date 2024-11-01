@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
-# TODO: Add collisions with walls, hook, and fish. Have vertical movement direction reverse when hitting the top of a fish (and the bottom of the map). Also, add similar collisions at various points in the map for various fishing line length checkpoints.
+# TODO: Add collision zones at various points in the map for various fishing line length checkpoints.
+
+# TODO: Make fish attach to hook when caught. Possibly just make a new fish scene, but likely just use .disabled = true on the area 2Ds that would interact with the hook. 
 
 const lateral_speed = 300
 const downward_speed = 200
