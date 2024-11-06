@@ -10,4 +10,4 @@ func _physics_process(delta: float) -> void:
 	pass
 
 func _on_ticker_timeout() -> void:
-	Global.score += 1
+	Global.score += Global.fisher_sps

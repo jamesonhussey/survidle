@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://bwr8hikmjuht"]
+
+[ext_resource type="Script" path="res://scripts/logistics_runner_map.gd" id="1_bqkmq"]
+[ext_resource type="Texture2D" uid="uid://dgj514nnrlgeg" path="res://assets/logistics_minigame/logi_runner_map.png" id="1_mv8w3"]
+[ext_resource type="Texture2D" uid="uid://b21nh36nwu0gw" path="res://assets/logistics_minigame/logi_truck_1.png" id="2_phbxt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0epqy"]
+atlas = ExtResource("2_phbxt")
+region = Rect2(0, 0, 60, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb7m8"]
+atlas = ExtResource("2_phbxt")
+region = Rect2(60, 0, 60, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_juf5r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0epqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pb7m8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="logistics_runner_map" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_bqkmq")
+
+[node name="map" type="Sprite2D" parent="."]
+position = Vector2(160, 90)
+texture = ExtResource("1_mv8w3")
+
+[node name="animated_truck" type="AnimatedSprite2D" parent="."]
+position = Vector2(268, 118)
+sprite_frames = SubResource("SpriteFrames_juf5r")
+animation = &"idle"

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://63tjh1b4plnk"]
+[gd_scene load_steps=4 format=3 uid="uid://63tjh1b4plnk"]
 
 [ext_resource type="Script" path="res://scripts/store_menu.gd" id="1_d236q"]
 [ext_resource type="Texture2D" uid="uid://go15lq1j85l8" path="res://assets/ui_elements/store_fish.png" id="1_ufnvk"]
+[ext_resource type="Texture2D" uid="uid://d23y61dh4e1wi" path="res://assets/logistics_minigame/logi_runner_store_icon.png" id="3_x43p5"]
 
 [node name="store_menu" type="Control"]
 layout_mode = 3
@@ -42,23 +43,23 @@ mouse_filter = 1
 text = "Example Price"
 icon = ExtResource("1_ufnvk")
 
-[node name="example_container" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+[node name="logistics_runner_container" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container"]
+[node name="logi_runner_label" type="Label" parent="ScrollContainer/VBoxContainer/logistics_runner_container"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 1
-text = "Recruit Example"
+text = "Recruit Logi Runner"
 vertical_alignment = 1
 
-[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container"]
+[node name="recruit_logi_price" type="Button" parent="ScrollContainer/VBoxContainer/logistics_runner_container"]
 layout_mode = 2
 size_flags_horizontal = 8
 mouse_filter = 1
 text = "Example Price"
-icon = ExtResource("1_ufnvk")
+icon = ExtResource("3_x43p5")
 
 [node name="example_container2" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
