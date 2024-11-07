@@ -1,25 +1,33 @@
 extends Control
 
-var game_screen_list = ["home_base", "fishing_minigame"]
+var game_screen_list = ["home_base", "fishing_minigame", "logistics_runner_map"]
 var game_screen_list_iterator = 0
 var transitioned = true
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# OPTIMIZE: OBVIOUSLY just check once for ! transitioned and then check all the others afterwards
 func _process(delta: float) -> void:
 	$score_counter.text = str(Global.score)
 	if game_screen_list[game_screen_list_iterator] == "home_base" && ! transitioned:
 		$home_base.show()
 		$fishing_minigame.hide()
+		$logistics_runner_map.hide()
+		
 		transitioned = true
 		
 	if game_screen_list[game_screen_list_iterator] == "fishing_minigame" && ! transitioned:
-		$fishing_minigame.show()
 		$home_base.hide()
+		$fishing_minigame.show()
+		$logistics_runner_map.hide()
+		
+		transitioned = true
+		
+	if game_screen_list[game_screen_list_iterator] == "logistics_runner_map" && ! transitioned:
+		$home_base.hide()
+		$fishing_minigame.hide()
+		$logistics_runner_map.show()
 		
 		transitioned = true
 

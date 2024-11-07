@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dvcdltvq8e0wh"]
+[gd_scene load_steps=7 format=3 uid="uid://dvcdltvq8e0wh"]
 
 [ext_resource type="Texture2D" uid="uid://dc134bgjmimx0" path="res://assets/ui_elements/base_ui.png" id="1_8k5qu"]
 [ext_resource type="Script" path="res://scripts/ui_overlay.gd" id="1_ovja4"]
 [ext_resource type="PackedScene" uid="uid://bdiqm8gly43t5" path="res://scenes/fishing_minigame.tscn" id="3_wv3eu"]
 [ext_resource type="PackedScene" uid="uid://78er60ke7kgd" path="res://scenes/home_base.tscn" id="4_n1xfb"]
+[ext_resource type="PackedScene" uid="uid://bwr8hikmjuht" path="res://scenes/logistics_runner_map.tscn" id="5_8enop"]
 [ext_resource type="PackedScene" uid="uid://63tjh1b4plnk" path="res://scenes/store_menu.tscn" id="5_icldk"]
 
 [node name="ui_overlay" type="Control"]
@@ -15,6 +16,39 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ovja4")
+
+[node name="home_base" parent="." instance=ExtResource("4_n1xfb")]
+z_index = -1
+
+[node name="fishing_minigame" parent="." instance=ExtResource("3_wv3eu")]
+visible = false
+z_index = -1
+
+[node name="logistics_runner_map" parent="." instance=ExtResource("5_8enop")]
+visible = false
+scale = Vector2(4, 4)
+
+[node name="go_left_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_top = 0.889
+anchor_right = 0.45
+anchor_bottom = 0.978
+offset_top = -0.0800171
+offset_bottom = -0.160034
+flat = true
+
+[node name="go_right_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.045
+anchor_bottom = 0.108
+offset_left = 640.0
+offset_top = 640.0
+offset_right = 646.4
+offset_bottom = 626.24
+flat = true
 
 [node name="base_ui" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -38,35 +72,6 @@ theme_override_font_sizes/font_size = 42
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="go_right_button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.045
-anchor_bottom = 0.108
-offset_left = 640.0
-offset_top = 640.0
-offset_right = 646.4
-offset_bottom = 626.24
-flat = true
-
-[node name="go_left_button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.4
-anchor_top = 0.889
-anchor_right = 0.45
-anchor_bottom = 0.978
-offset_top = -0.0800171
-offset_bottom = -0.160034
-flat = true
-
-[node name="home_base" parent="." instance=ExtResource("4_n1xfb")]
-z_index = -1
-
-[node name="fishing_minigame" parent="." instance=ExtResource("3_wv3eu")]
-visible = false
-z_index = -1
-
 [node name="store_menu" parent="." instance=ExtResource("5_icldk")]
 layout_mode = 1
 offset_left = 888.0
@@ -74,5 +79,5 @@ offset_top = 128.0
 offset_right = -28.0
 offset_bottom = -28.0
 
-[connection signal="button_down" from="go_right_button" to="." method="_on_go_right_button_button_down"]
 [connection signal="button_down" from="go_left_button" to="." method="_on_go_left_button_button_down"]
+[connection signal="button_down" from="go_right_button" to="." method="_on_go_right_button_button_down"]

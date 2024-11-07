@@ -314,3 +314,4 @@ text = "Example Price"
 icon = ExtResource("1_ufnvk")
 
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/fisherman_container/recruit_fisherman_button" to="." method="_on_recruit_fisherman_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/logistics_runner_container/recruit_logi_price" to="." method="_on_recruit_logi_price_pressed"]
