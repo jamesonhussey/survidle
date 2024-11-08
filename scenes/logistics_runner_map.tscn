@@ -30,8 +30,6 @@ animations = [{
 texture_filter = 1
 script = ExtResource("1_bqkmq")
 
-[node name="cat_container" type="Node2D" parent="."]
-
 [node name="map" type="Sprite2D" parent="."]
 position = Vector2(160, 90)
 texture = ExtResource("1_mv8w3")
@@ -51,3 +49,5 @@ position = Vector2(183, 124)
 
 [node name="Marker2D" type="Marker2D" parent="spawn_container"]
 position = Vector2(37, 123)
+
+[node name="cat_container" type="Node2D" parent="."]

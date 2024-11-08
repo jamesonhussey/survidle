@@ -9,7 +9,7 @@ func _ready() -> void:
 
 # OPTIMIZE: OBVIOUSLY just check once for ! transitioned and then check all the others afterwards
 func _process(delta: float) -> void:
-	$score_counter.text = str(Global.score)
+	$score_counter.text = str(snapped(Global.score, .01))
 	if game_screen_list[game_screen_list_iterator] == "home_base" && ! transitioned:
 		$home_base.show()
 		$fishing_minigame.hide()

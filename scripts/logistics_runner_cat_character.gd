@@ -6,6 +6,10 @@ var current_direction = null
 
 const SPEED = 30
 
+func _ready() -> void:
+	$ticker.start()
+	
+
 func _physics_process(delta: float) -> void:
 	choose_direction()
 	move_in_direction()

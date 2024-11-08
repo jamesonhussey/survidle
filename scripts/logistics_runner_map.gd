@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 func update_worker_count():
 	if Global.logi_runner_count > local_worker_count:
 		var worker_instance = Worker.instantiate()
-		worker_instance.scale = Vector2(2,2)
+		worker_instance.scale = Vector2(.7,.7)
 		var spawns = spawn_container.get_children()
 		var index = randi() % spawns.size()
 		worker_instance.global_position = spawns[index].global_position
