@@ -1,6 +1,6 @@
 extends Node2D
 
-# FIXME: Logi runners are not spawning when purchased
+# FIXME: Logi runners are spawning in scene mode but not when main scene is played ://///
 
 var Worker = preload("res://scenes/logistics_runner_cat_character.tscn")
 var local_worker_count = 0
