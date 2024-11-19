@@ -4,7 +4,7 @@ var to_truck_anim_playing = false
 var to_door_anim_playing = false
 var current_direction = null
 
-const SPEED = 30
+var SPEED = randi_range(5, 100)
 
 func _ready() -> void:
 	$ticker.start()

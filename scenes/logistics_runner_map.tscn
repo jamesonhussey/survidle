@@ -50,4 +50,10 @@ position = Vector2(183, 124)
 [node name="Marker2D" type="Marker2D" parent="spawn_container"]
 position = Vector2(37, 123)
 
+[node name="Marker2D2" type="Marker2D" parent="spawn_container"]
+position = Vector2(48, 123)
+
+[node name="Marker2D3" type="Marker2D" parent="spawn_container"]
+position = Vector2(61, 123)
+
 [node name="cat_container" type="Node2D" parent="."]

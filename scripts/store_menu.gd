@@ -6,8 +6,8 @@ extends Control
 @onready var recruit_logistics_runner_button = $ScrollContainer/VBoxContainer/logistics_runner_container/recruit_logi_price
 
 func _ready() -> void:
-	recruit_fisherman_button.text = str(Global.fisher_worker_price)
-	recruit_logistics_runner_button.text = str(Global.logi_runner_worker_price)
+	recruit_fisherman_button.text = str(snapped(Global.fisher_worker_price, .01))
+	recruit_logistics_runner_button.text = str(snapped(Global.logi_runner_worker_price, .01))
 
 func _process(delta: float) -> void:
 	pass
@@ -21,7 +21,7 @@ func _on_recruit_fisherman_button_pressed() -> void:
 
 func increase_fisher_worker_price():
 	Global.fisher_worker_price += (Global.fisher_worker_price * 1.15) - Global.fisher_worker_price
-	recruit_fisherman_button.text = str(Global.fisher_worker_price)
+	recruit_fisherman_button.text = str(snapped(Global.fisher_worker_price, .01))
 
 
 func _on_recruit_logi_price_pressed() -> void:
@@ -32,4 +32,4 @@ func _on_recruit_logi_price_pressed() -> void:
 
 func increase_logi_worker_price():
 	Global.logi_runner_worker_price += (Global.logi_runner_worker_price * 1.15) - Global.logi_runner_worker_price
-	recruit_logistics_runner_button.text = str(Global.logi_runner_worker_price)
+	recruit_logistics_runner_button.text = str(snapped(Global.logi_runner_worker_price, .01))

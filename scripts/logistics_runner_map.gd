@@ -21,8 +21,10 @@ func update_worker_count():
 		var worker_instance = Worker.instantiate()
 		worker_instance.scale = Vector2(.7,.7)
 		var spawns = spawn_container.get_children()
-		var index = randi() % spawns.size()
-		worker_instance.global_position = spawns[index].global_position
+		#var index = randi() % spawns.size()
+		#worker_instance.global_position = spawns[index].global_position
+		# FIXME: Not really sure why the spawn container version of this works on the other map but not on this one. It currently just spawns them at the coordinates of the door, but this may be an issue for different resolutions, not too sure. 
+		worker_instance.global_position = Vector2(37, 123)
 		cat_container.add_child(worker_instance)
 		local_worker_count += 1
 	elif Global.logi_runner_count < local_worker_count:
