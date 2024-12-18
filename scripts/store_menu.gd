@@ -1,7 +1,5 @@
 extends Control
 
-# FIXME: Change the score counter and all prices to round to the nearest integer, it looks like shit right now.
-
 @onready var recruit_fisherman_button = $ScrollContainer/VBoxContainer/fisherman_container/recruit_fisherman_button
 @onready var recruit_logistics_runner_button = $ScrollContainer/VBoxContainer/logistics_runner_container/recruit_logi_price
 

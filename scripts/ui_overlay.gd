@@ -1,6 +1,6 @@
 extends Control
 
-var game_screen_list = ["home_base", "fishing_minigame", "logistics_runner_map"]
+var game_screen_list = ["home_base", "fishing_minigame", "logistics_runner_map", "hunter_map"]
 var game_screen_list_iterator = 0
 var transitioned = true
 
@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 		$home_base.show()
 		$fishing_minigame.hide()
 		$logistics_runner_map.hide()
+		$hunter_map.hide()
 		
 		transitioned = true
 		
@@ -21,6 +22,7 @@ func _process(delta: float) -> void:
 		$home_base.hide()
 		$fishing_minigame.show()
 		$logistics_runner_map.hide()
+		$hunter_map.hide()
 		
 		transitioned = true
 		
@@ -28,6 +30,15 @@ func _process(delta: float) -> void:
 		$home_base.hide()
 		$fishing_minigame.hide()
 		$logistics_runner_map.show()
+		$hunter_map.hide()
+		
+		transitioned = true
+		
+	if game_screen_list[game_screen_list_iterator] == "hunter_map" && ! transitioned:
+		$home_base.hide()
+		$fishing_minigame.hide()
+		$logistics_runner_map.hide()
+		$hunter_map.show()
 		
 		transitioned = true
 
