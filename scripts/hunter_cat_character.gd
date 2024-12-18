@@ -15,3 +15,4 @@ func _physics_process(delta: float) -> void:
 
 func _on_ticker_timeout() -> void:
 	Global.score += Global.hunter_sps
+	$AnimatedSprite2D.play("ranged_attack")

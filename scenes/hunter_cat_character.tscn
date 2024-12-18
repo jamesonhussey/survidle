@@ -60,6 +60,8 @@ script = ExtResource("1_8w1de")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l8sah")
 animation = &"ranged_attack"
+frame = 2
+frame_progress = 0.683809
 
 [node name="ticker" type="Timer" parent="."]
 

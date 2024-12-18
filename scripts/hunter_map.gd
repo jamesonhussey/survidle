@@ -2,7 +2,7 @@ extends Node2D
 
 # TODO: Currently workers can be spawned at the same Marker2D so some may not show up
 
-var Worker = preload("res://scenes/fishing_cat_character.tscn")
+var Worker = preload("res://scenes/hunter_cat_character.tscn")
 var local_hunter_count = 0
 
 @onready var spawn_container = $spawn_container
