@@ -1,5 +1,7 @@
 extends Control
 
+#TODO: Add show/hide button for shop menu.
+
 var game_screen_list = ["home_base", "fishing_minigame", "logistics_runner_map", "hunter_map"]
 var game_screen_list_iterator = 0
 var transitioned = true

@@ -43,4 +43,4 @@ func _on_recruit_hunter_price_pressed() -> void:
 		
 func increase_hunter_worker_price():
 	Global.hunter_worker_price += (Global.hunter_worker_price * 1.15) - Global.hunter_worker_price
-	recruit_logistics_runner_button.text = str(snapped(Global.hunter_worker_price, .01))
+	recruit_hunter_button.text = str(snapped(Global.hunter_worker_price, .01))
