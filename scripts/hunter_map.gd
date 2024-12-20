@@ -11,7 +11,7 @@ var local_hunter_count = 0
 func _ready() -> void:
 	pass # Replace with function body.
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	update_worker_count()
 
 func update_worker_count():
@@ -21,9 +21,9 @@ func update_worker_count():
 		var spawns = spawn_container.get_children()
 		var index = randi() % spawns.size()
 		worker_instance.global_position = spawns[index].global_position
-		#if worker_instance.global_position.x > 425:
-			#var worker_instance_animations = worker_instance.get_child(0)
-			#worker_instance_animations.set_flip_h(true)
+		if worker_instance.global_position.x > 425:
+			var worker_instance_animations = worker_instance.get_child(0)
+			worker_instance_animations.set_flip_h(true)
 		cat_container.add_child(worker_instance)
 		local_hunter_count += 1
 	elif Global.hunter_count < local_hunter_count:

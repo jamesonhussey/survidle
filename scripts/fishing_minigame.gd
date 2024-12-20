@@ -11,7 +11,7 @@ var local_fisher_count = 0
 func _ready() -> void:
 	pass # Replace with function body.
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	update_worker_count()
 
 func update_worker_count():

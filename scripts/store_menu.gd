@@ -9,7 +9,7 @@ func _ready() -> void:
 	recruit_logistics_runner_button.text = str(snapped(Global.logi_runner_worker_price, .01))
 	recruit_hunter_button.text = str(snapped(Global.hunter_worker_price, .01))
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 #OPTIMIZE: Turn this into a universal function for recruiting all units (i.e., receives a var containing the requisite global var and see if you can just do "Global.PASSEDVAR" to refer to whichever one is being passed. Possibly do the same for price increases if possible. 

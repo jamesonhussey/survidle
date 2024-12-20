@@ -14,42 +14,36 @@ texture = ExtResource("1_24efh")
 [node name="spawn_container" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="spawn_container"]
-position = Vector2(71, 39)
+position = Vector2(95, 33)
 
 [node name="Marker2D2" type="Marker2D" parent="spawn_container"]
-position = Vector2(113, 17)
+position = Vector2(71, 82)
+
+[node name="Marker2D3" type="Marker2D" parent="spawn_container"]
+position = Vector2(90, 136)
+
+[node name="Marker2D4" type="Marker2D" parent="spawn_container"]
+position = Vector2(131, 151)
+
+[node name="Marker2D5" type="Marker2D" parent="spawn_container"]
+position = Vector2(152, 22)
+
+[node name="Marker2D6" type="Marker2D" parent="spawn_container"]
+position = Vector2(77, 56)
+
+[node name="Marker2D7" type="Marker2D" parent="spawn_container"]
+position = Vector2(74, 112)
 
 [node name="Marker2D8" type="Marker2D" parent="spawn_container"]
-position = Vector2(157, 156)
-
-[node name="Marker2D11" type="Marker2D" parent="spawn_container"]
-position = Vector2(123, 153)
-
-[node name="Marker2D12" type="Marker2D" parent="spawn_container"]
-position = Vector2(68, 122)
-
-[node name="Marker2D13" type="Marker2D" parent="spawn_container"]
-position = Vector2(57, 67)
-
-[node name="Marker2D14" type="Marker2D" parent="spawn_container"]
-position = Vector2(91, 26)
-
-[node name="Marker2D15" type="Marker2D" parent="spawn_container"]
-position = Vector2(141, 18)
-
-[node name="Marker2D16" type="Marker2D" parent="spawn_container"]
-position = Vector2(167, 16)
-
-[node name="Marker2D17" type="Marker2D" parent="spawn_container"]
-position = Vector2(188, 17)
-
-[node name="Marker2D18" type="Marker2D" parent="spawn_container"]
-position = Vector2(185, 156)
+position = Vector2(97, 163)
 
 [node name="Marker2D9" type="Marker2D" parent="spawn_container"]
-position = Vector2(95, 139)
+position = Vector2(63, 151)
 
 [node name="Marker2D10" type="Marker2D" parent="spawn_container"]
-position = Vector2(56, 93)
+position = Vector2(45, 119)
+
+[node name="Marker2D11" type="Marker2D" parent="spawn_container"]
+position = Vector2(40, 87)
 
 [node name="cat_container" type="Node2D" parent="."]

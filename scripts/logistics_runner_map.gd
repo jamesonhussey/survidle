@@ -11,14 +11,14 @@ func _ready() -> void:
 	Global.logi_map_truck_marker_x = $truck_marker.position.x
 	Global.logi_map_door_marker_x = $door_marker.position.x
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	update_worker_count()
 
 func update_worker_count():
 	if Global.logi_runner_count > local_worker_count:
 		var worker_instance = Worker.instantiate()
 		worker_instance.scale = Vector2(.7,.7)
-		var spawns = spawn_container.get_children()
+		#var spawns = spawn_container.get_children()
 		#var index = randi() % spawns.size()
 		#worker_instance.global_position = spawns[index].global_position
 		worker_instance.global_position = Vector2(37, 123)

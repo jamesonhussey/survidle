@@ -10,22 +10,9 @@ func _ready() -> void:
 	$ticker.start()
 	
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	choose_direction()
 	move_in_direction()
-	
-	#if self.position.x < Global.logi_map_truck_marker_x:
-		#velocity.x = SPEED
-		#if ! to_truck_anim_playing:
-			#$animations.play("push_crate")
-			#to_truck_anim_playing = true
-			#to_door_anim_playing = false
-	#if self.position.x < Global.logi_map_door_marker_x:
-		#velocity.x = - SPEED
-		#if ! to_door_anim_playing:
-			#$animations.play("walk")
-			#to_door_anim_playing = true
-			#to_truck_anim_playing = false
 	move_and_slide()
 
 func move_in_direction():
