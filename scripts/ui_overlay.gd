@@ -1,7 +1,7 @@
 extends Control
 
 #TODO: Add show/hide button for shop menu.
-#FIXME: HUNTER MAP SPAWN ISSUE: Hunters spawn when map is scaled normally, but when scene instance scale is changed to 4, 4 in ui_overlay scene tree, hunters no longer appear when spawned. Which is odd considering that scaling in this way works completely fine in logistics_runner_map. I remember having a similar issue with the logi runner map though, and I think I only fixed it by creating the global spawn position holding variables. Maybe just upscale the map sprite and see if that fixes it. I think it's having an issue when trying to convert 1x scale coordinates to 4x scale coordinates for the spawn locations. 
+#NOTE: (((This is the correct solution, use this for reference if units don't spawn in the future.))) HUNTER MAP SPAWN ISSUE: Hunters spawn when map is scaled normally, but when scene instance scale is changed to 4, 4 in ui_overlay scene tree, hunters no longer appear when spawned. Which is odd considering that scaling in this way works completely fine in logistics_runner_map. I remember having a similar issue with the logi runner map though, and I think I only fixed it by creating the global spawn position holding variables. Maybe just upscale the map sprite and see if that fixes it. I think it's having an issue when trying to convert 1x scale coordinates to 4x scale coordinates for the spawn locations. 
 
 var game_screen_list = ["home_base", "fishing_minigame", "logistics_runner_map", "hunter_map"]
 var game_screen_list_iterator = 0

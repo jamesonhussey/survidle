@@ -32,7 +32,6 @@ scale = Vector2(4, 4)
 [node name="hunter_map" parent="." instance=ExtResource("5_l033j")]
 visible = false
 z_index = -1
-scale = Vector2(4, 4)
 
 [node name="go_left_button" type="Button" parent="."]
 layout_mode = 1
