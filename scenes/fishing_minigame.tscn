@@ -134,4 +134,271 @@ position = Vector2(215, 404)
 [node name="Marker2D40" type="Marker2D" parent="spawn_container"]
 position = Vector2(258, 416)
 
+[node name="Marker2D41" type="Marker2D" parent="spawn_container"]
+position = Vector2(96, 483)
+
+[node name="Marker2D42" type="Marker2D" parent="spawn_container"]
+position = Vector2(120, 535)
+
+[node name="Marker2D43" type="Marker2D" parent="spawn_container"]
+position = Vector2(153, 583)
+
+[node name="Marker2D44" type="Marker2D" parent="spawn_container"]
+position = Vector2(193, 620)
+
+[node name="Marker2D45" type="Marker2D" parent="spawn_container"]
+position = Vector2(260, 650)
+
+[node name="Marker2D46" type="Marker2D" parent="spawn_container"]
+position = Vector2(338, 677)
+
+[node name="Marker2D47" type="Marker2D" parent="spawn_container"]
+position = Vector2(404, 692)
+
+[node name="Marker2D48" type="Marker2D" parent="spawn_container"]
+position = Vector2(473, 689)
+
+[node name="Marker2D49" type="Marker2D" parent="spawn_container"]
+position = Vector2(539, 682)
+
+[node name="Marker2D50" type="Marker2D" parent="spawn_container"]
+position = Vector2(605, 661)
+
+[node name="Marker2D51" type="Marker2D" parent="spawn_container"]
+position = Vector2(645, 628)
+
+[node name="Marker2D52" type="Marker2D" parent="spawn_container"]
+position = Vector2(685, 580)
+
+[node name="Marker2D53" type="Marker2D" parent="spawn_container"]
+position = Vector2(716, 526)
+
+[node name="Marker2D54" type="Marker2D" parent="spawn_container"]
+position = Vector2(753, 459)
+
+[node name="Marker2D55" type="Marker2D" parent="spawn_container"]
+position = Vector2(775, 389)
+
+[node name="Marker2D56" type="Marker2D" parent="spawn_container"]
+position = Vector2(782, 322)
+
+[node name="Marker2D57" type="Marker2D" parent="spawn_container"]
+position = Vector2(781, 277)
+
+[node name="Marker2D58" type="Marker2D" parent="spawn_container"]
+position = Vector2(760, 225)
+
+[node name="Marker2D59" type="Marker2D" parent="spawn_container"]
+position = Vector2(732, 182)
+
+[node name="Marker2D60" type="Marker2D" parent="spawn_container"]
+position = Vector2(701, 144)
+
+[node name="Marker2D61" type="Marker2D" parent="spawn_container"]
+position = Vector2(659, 110)
+
+[node name="Marker2D62" type="Marker2D" parent="spawn_container"]
+position = Vector2(605, 91)
+
+[node name="Marker2D63" type="Marker2D" parent="spawn_container"]
+position = Vector2(548, 69)
+
+[node name="Marker2D64" type="Marker2D" parent="spawn_container"]
+position = Vector2(478, 51)
+
+[node name="Marker2D65" type="Marker2D" parent="spawn_container"]
+position = Vector2(418, 42)
+
+[node name="Marker2D66" type="Marker2D" parent="spawn_container"]
+position = Vector2(345, 45)
+
+[node name="Marker2D67" type="Marker2D" parent="spawn_container"]
+position = Vector2(281, 58)
+
+[node name="Marker2D68" type="Marker2D" parent="spawn_container"]
+position = Vector2(232, 77)
+
+[node name="Marker2D69" type="Marker2D" parent="spawn_container"]
+position = Vector2(186, 114)
+
+[node name="Marker2D70" type="Marker2D" parent="spawn_container"]
+position = Vector2(153, 151)
+
+[node name="Marker2D71" type="Marker2D" parent="spawn_container"]
+position = Vector2(123, 202)
+
+[node name="Marker2D72" type="Marker2D" parent="spawn_container"]
+position = Vector2(96, 260)
+
+[node name="Marker2D73" type="Marker2D" parent="spawn_container"]
+position = Vector2(75, 320)
+
+[node name="Marker2D74" type="Marker2D" parent="spawn_container"]
+position = Vector2(72, 386)
+
+[node name="Marker2D75" type="Marker2D" parent="spawn_container"]
+position = Vector2(75, 434)
+
+[node name="Marker2D76" type="Marker2D" parent="spawn_container"]
+position = Vector2(48, 513)
+
+[node name="Marker2D77" type="Marker2D" parent="spawn_container"]
+position = Vector2(66, 565)
+
+[node name="Marker2D78" type="Marker2D" parent="spawn_container"]
+position = Vector2(93, 608)
+
+[node name="Marker2D79" type="Marker2D" parent="spawn_container"]
+position = Vector2(132, 648)
+
+[node name="Marker2D80" type="Marker2D" parent="spawn_container"]
+position = Vector2(169, 676)
+
+[node name="Marker2D81" type="Marker2D" parent="spawn_container"]
+position = Vector2(212, 701)
+
+[node name="Marker2D82" type="Marker2D" parent="spawn_container"]
+position = Vector2(22, 440)
+
+[node name="Marker2D83" type="Marker2D" parent="spawn_container"]
+position = Vector2(19, 367)
+
+[node name="Marker2D84" type="Marker2D" parent="spawn_container"]
+position = Vector2(22, 297)
+
+[node name="Marker2D85" type="Marker2D" parent="spawn_container"]
+position = Vector2(32, 227)
+
+[node name="Marker2D86" type="Marker2D" parent="spawn_container"]
+position = Vector2(57, 164)
+
+[node name="Marker2D87" type="Marker2D" parent="spawn_container"]
+position = Vector2(94, 113)
+
+[node name="Marker2D88" type="Marker2D" parent="spawn_container"]
+position = Vector2(130, 71)
+
+[node name="Marker2D89" type="Marker2D" parent="spawn_container"]
+position = Vector2(175, 40)
+
+[node name="Marker2D90" type="Marker2D" parent="spawn_container"]
+position = Vector2(226, 13)
+
+[node name="Marker2D91" type="Marker2D" parent="spawn_container"]
+position = Vector2(115, 13)
+
+[node name="Marker2D92" type="Marker2D" parent="spawn_container"]
+position = Vector2(73, 49)
+
+[node name="Marker2D93" type="Marker2D" parent="spawn_container"]
+position = Vector2(36, 83)
+
+[node name="Marker2D94" type="Marker2D" parent="spawn_container"]
+position = Vector2(12, 126)
+
+[node name="Marker2D95" type="Marker2D" parent="spawn_container"]
+position = Vector2(6, 569)
+
+[node name="Marker2D96" type="Marker2D" parent="spawn_container"]
+position = Vector2(24, 621)
+
+[node name="Marker2D97" type="Marker2D" parent="spawn_container"]
+position = Vector2(57, 669)
+
+[node name="Marker2D98" type="Marker2D" parent="spawn_container"]
+position = Vector2(91, 706)
+
+[node name="Marker2D99" type="Marker2D" parent="spawn_container"]
+position = Vector2(30, 707)
+
+[node name="Marker2D100" type="Marker2D" parent="spawn_container"]
+position = Vector2(5, 674)
+
+[node name="Marker2D101" type="Marker2D" parent="spawn_container"]
+position = Vector2(273, 714)
+
+[node name="Marker2D102" type="Marker2D" parent="spawn_container"]
+position = Vector2(595, 23)
+
+[node name="Marker2D103" type="Marker2D" parent="spawn_container"]
+position = Vector2(652, 51)
+
+[node name="Marker2D104" type="Marker2D" parent="spawn_container"]
+position = Vector2(703, 87)
+
+[node name="Marker2D105" type="Marker2D" parent="spawn_container"]
+position = Vector2(751, 120)
+
+[node name="Marker2D106" type="Marker2D" parent="spawn_container"]
+position = Vector2(791, 166)
+
+[node name="Marker2D107" type="Marker2D" parent="spawn_container"]
+position = Vector2(824, 227)
+
+[node name="Marker2D108" type="Marker2D" parent="spawn_container"]
+position = Vector2(833, 300)
+
+[node name="Marker2D109" type="Marker2D" parent="spawn_container"]
+position = Vector2(832, 382)
+
+[node name="Marker2D110" type="Marker2D" parent="spawn_container"]
+position = Vector2(822, 458)
+
+[node name="Marker2D111" type="Marker2D" parent="spawn_container"]
+position = Vector2(795, 530)
+
+[node name="Marker2D112" type="Marker2D" parent="spawn_container"]
+position = Vector2(753, 596)
+
+[node name="Marker2D113" type="Marker2D" parent="spawn_container"]
+position = Vector2(713, 645)
+
+[node name="Marker2D114" type="Marker2D" parent="spawn_container"]
+position = Vector2(668, 685)
+
+[node name="Marker2D115" type="Marker2D" parent="spawn_container"]
+position = Vector2(614, 716)
+
+[node name="Marker2D116" type="Marker2D" parent="spawn_container"]
+position = Vector2(740, 713)
+
+[node name="Marker2D117" type="Marker2D" parent="spawn_container"]
+position = Vector2(785, 664)
+
+[node name="Marker2D118" type="Marker2D" parent="spawn_container"]
+position = Vector2(821, 613)
+
+[node name="Marker2D119" type="Marker2D" parent="spawn_container"]
+position = Vector2(858, 550)
+
+[node name="Marker2D120" type="Marker2D" parent="spawn_container"]
+position = Vector2(885, 475)
+
+[node name="Marker2D121" type="Marker2D" parent="spawn_container"]
+position = Vector2(900, 402)
+
+[node name="Marker2D122" type="Marker2D" parent="spawn_container"]
+position = Vector2(909, 326)
+
+[node name="Marker2D123" type="Marker2D" parent="spawn_container"]
+position = Vector2(906, 254)
+
+[node name="Marker2D124" type="Marker2D" parent="spawn_container"]
+position = Vector2(876, 193)
+
+[node name="Marker2D125" type="Marker2D" parent="spawn_container"]
+position = Vector2(848, 139)
+
+[node name="Marker2D126" type="Marker2D" parent="spawn_container"]
+position = Vector2(806, 84)
+
+[node name="Marker2D127" type="Marker2D" parent="spawn_container"]
+position = Vector2(751, 44)
+
+[node name="Marker2D128" type="Marker2D" parent="spawn_container"]
+position = Vector2(699, 10)
+
+[node name="Marker2D129" type="Marker2D" parent="spawn_container"]
+position = Vector2(293, 1)
+
 [node name="cat_container" type="Node2D" parent="."]
