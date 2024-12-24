@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dvcdltvq8e0wh"]
+[gd_scene load_steps=9 format=3 uid="uid://dvcdltvq8e0wh"]
 
 [ext_resource type="Texture2D" uid="uid://dc134bgjmimx0" path="res://assets/ui_elements/base_ui.png" id="1_8k5qu"]
 [ext_resource type="Script" path="res://scripts/ui_overlay.gd" id="1_ovja4"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwr8hikmjuht" path="res://scenes/logistics_runner_map.tscn" id="5_8enop"]
 [ext_resource type="PackedScene" uid="uid://63tjh1b4plnk" path="res://scenes/store_menu.tscn" id="5_icldk"]
 [ext_resource type="PackedScene" uid="uid://dksh1jtj8r7ru" path="res://scenes/hunter_map.tscn" id="5_l033j"]
+[ext_resource type="PackedScene" uid="uid://b1r0kk4l6yx8h" path="res://scenes/raider_map.tscn" id="6_e2gbd"]
 
 [node name="ui_overlay" type="Control"]
 texture_filter = 1
@@ -32,6 +33,9 @@ scale = Vector2(4, 4)
 [node name="hunter_map" parent="." instance=ExtResource("5_l033j")]
 visible = false
 z_index = -1
+
+[node name="raider_map" parent="." instance=ExtResource("6_e2gbd")]
+visible = false
 
 [node name="go_left_button" type="Button" parent="."]
 layout_mode = 1

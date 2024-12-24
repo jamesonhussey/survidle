@@ -80,18 +80,18 @@ mouse_filter = 1
 text = "Example Price"
 icon = ExtResource("4_gyvag")
 
-[node name="example_container3" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
+[node name="raider_container" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="example_label" type="Label" parent="ScrollContainer/VBoxContainer/example_container3"]
+[node name="raider_label" type="Label" parent="ScrollContainer/VBoxContainer/raider_container"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 1
-text = "Recruit Example"
+text = "Recruit Raider"
 vertical_alignment = 1
 
-[node name="recruit_example_price" type="Button" parent="ScrollContainer/VBoxContainer/example_container3"]
+[node name="recruit_raider_price" type="Button" parent="ScrollContainer/VBoxContainer/raider_container"]
 layout_mode = 2
 size_flags_horizontal = 8
 mouse_filter = 1
@@ -317,3 +317,4 @@ icon = ExtResource("1_ufnvk")
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/fisherman_container/recruit_fisherman_button" to="." method="_on_recruit_fisherman_button_pressed"]
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/logistics_runner_container/recruit_logi_price" to="." method="_on_recruit_logi_price_pressed"]
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/hunter_container/recruit_hunter_price" to="." method="_on_recruit_hunter_price_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/raider_container/recruit_raider_price" to="." method="_on_recruit_raider_price_pressed"]

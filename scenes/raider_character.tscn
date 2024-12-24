@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://ccib2ov14uocr"]
+
+[ext_resource type="Texture2D" uid="uid://54o2qgnf0ixl" path="res://assets/raider_assets/Raider_Cat_Idle.png" id="1_8pwp8"]
+[ext_resource type="Script" path="res://scripts/raider_character.gd" id="1_as6xq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxvn1"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpgoc"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uf422"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_raima"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jku13"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ffnk"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8tem"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0ou6"]
+atlas = ExtResource("1_8pwp8")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yd4qq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxvn1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpgoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uf422")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_raima")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jku13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ffnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8tem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0ou6")
+}],
+"loop": true,
+"name": &"raider_idle",
+"speed": 5.0
+}]
+
+[node name="raider_character" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_as6xq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yd4qq")
+animation = &"raider_idle"
+frame = 2
+frame_progress = 0.741081
+
+[node name="ticker" type="Timer" parent="."]
+
+[connection signal="timeout" from="ticker" to="." method="_on_ticker_timeout"]

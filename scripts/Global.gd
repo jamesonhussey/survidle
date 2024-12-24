@@ -17,9 +17,13 @@ var logi_runner_sps = 1
 var logi_map_truck_marker_x
 var logi_map_door_marker_x
 
-var hunter_count = 10
+var hunter_count = 0
 var hunter_worker_price = 1100
 var hunter_sps = 8
+
+var raider_count = 10
+var raider_worker_price = 12000
+var raider_sps = 47
 
 # FISHING MINIGAME VARS
 var spawned_fish_rarity = 0
