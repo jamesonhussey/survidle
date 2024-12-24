@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://63tjh1b4plnk"]
+[gd_scene load_steps=6 format=3 uid="uid://63tjh1b4plnk"]
 
 [ext_resource type="Script" path="res://scripts/store_menu.gd" id="1_d236q"]
 [ext_resource type="Texture2D" uid="uid://go15lq1j85l8" path="res://assets/ui_elements/store_fish.png" id="1_ufnvk"]
 [ext_resource type="Texture2D" uid="uid://d23y61dh4e1wi" path="res://assets/logistics_minigame/logi_runner_store_icon.png" id="3_x43p5"]
 [ext_resource type="Texture2D" uid="uid://be6mplhel84ir" path="res://assets/ui_elements/hunter_store_icon.png" id="4_gyvag"]
+[ext_resource type="Texture2D" uid="uid://dldcymh0m38or" path="res://assets/raider_assets/raider_store_icon.png" id="5_w4hi1"]
 
 [node name="store_menu" type="Control"]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -96,7 +98,7 @@ layout_mode = 2
 size_flags_horizontal = 8
 mouse_filter = 1
 text = "Example Price"
-icon = ExtResource("1_ufnvk")
+icon = ExtResource("5_w4hi1")
 
 [node name="example_container4" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 layout_mode = 2
