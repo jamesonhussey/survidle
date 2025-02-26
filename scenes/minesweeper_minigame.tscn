@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bqhr1i52iykep"]
+
+[node name="minesweeper_minigame" type="Node2D"]
