@@ -12,6 +12,9 @@ func _ready() -> void:
 
 # OPTIMIZE: OBVIOUSLY just check once for ! transitioned and then check all the others afterwards
 func _process(_delta: float) -> void:
+	var current_score_per_second = (Global.fisher_count * Global.fisher_sps) + (Global.logi_runner_count * Global.logi_runner_sps) + (Global.hunter_count * Global.hunter_sps) + (Global.raider_count * Global.raider_sps)
+	
+	$score_counter2.text = str(snapped(current_score_per_second, .1))
 	$score_counter.text = str(snapped(Global.score, 1))
 	if game_screen_list[game_screen_list_iterator] == "home_base" && ! transitioned:
 		$home_base.show()
